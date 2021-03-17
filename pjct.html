@@ -1,0 +1,135 @@
+     <section class="header_text sub">
+
+						<form action="#" method="post">#}
+						<input type="hidden" name="next" value="/">#}
+							<fieldset>#}
+								<div class="control-group">#}
+									<label class="control-label"><font size="3">Username</font></label>#}								<div class="controls">
+{#										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge">#}
+{#									</div>#}
+{#								</div>#}
+{#								<div class="control-group">#}
+{#									<label class="control-label"><font size="3">Password</font></label>#}
+{#									<div class="controls">#}
+{#										<input type="password" placeholder="Enter your password" id="password" class="input-xlarge">#}
+{#									</div>#}
+{#								</div>#}
+{#								<div class="control-group">#}
+{#									<input tabindex="3" class="btn btn-inverse large" type="submit" value="Sign into your account">#}
+{#									<hr>#}
+{#									<p class="reset">Recover your <a tabindex="4" href="#" title="Recover your username or password"><font size="3">username or password</font></a></p>#}
+{#								</div>#}
+							</fieldset>
+						</form>
+					</div>
+					<div class="span7">
+						<h4 class="title"><span class="text"><strong><font size="4">New user Register</strong> Form</span></h4></font>
+						<form action="{%url  'userregistration'%}}" method="post" class="form-stacked">
+							{% csrf_token%}
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Name</font></label>
+									<div class="controls">
+										<input type="text" placeholder="Name" class="input-xlarge" name="name">
+									</div>
+								</div>
+
+
+
+									<div class="control-group">
+									<label class="control-label"><font size="3">Address</font></label>
+									<div class="controls">
+										<textarea  placeholder="Enter your address" class="input-xlarge" rows="4" cols="10" name="address"></textarea>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Name</font></label>
+									<div class="controls">
+										<input type="text" placeholder="pincode" class="input-xlarge" name="pincode">
+									</div>
+								</div>
+
+
+								<div class="control-group">
+									<label class="control-label"><font size="3">Email ID:</font></label>
+									<div class="controls">
+										<input type="password" name="email" placeholder="Enter your email" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Phone no</font></label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your phone no" name="mobile" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Districts</font></label>
+									<div class="controls">
+										<select  name="discrict" class="input-xlarge">
+											<option value="1">Thiruvananthapuram</option>
+                                                <option value="2">Kollam</option>
+                                                <option value="3">Alappuzha</option>
+                                                <option value="4">Pathanamthitta</option>
+                                                <option value="5"> Kottayam</option>
+                                                <option value="6"> Idukki</option>
+                                                <option value="7">Ernakulam</option>
+                                                <option value="8">Thrissur</option>
+                                                <option value="9" >Palakkad</option>
+                                                <option value="10"> Malappuram</option>
+                                                <option value="11">Kozhikode</option>
+                                                <option value="12"> Wayanad</option>
+                                                <option value="13">Kannur</option>
+                                               <option value="14"> Kasaragod</option>
+                                               <option value="14"> Kasaragod</option>
+										</select>
+									</div>
+								</div>
+								<div>
+									<label class="control-label"><font size="3">Username</font></label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your phone no" name="username" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Password:</font></label>
+									<div class="controls">
+										<input type="password" name="password" placeholder="Enter your password" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><font size="3">Confirm Password:</font></label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your confirm password" class="input-xlarge">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
+								</div>
+								<hr>
+
+								<div class="actions">
+									<input tabindex="9"  name="submit" class="btn btn-inverse large" type="submit" value="Create your account"></div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3">
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="./index.html">Homepage</a></li>
+							<li><a href="./about.html">About Us</a></li>
+							<li><a href="./contact.html">Contact Us</a></li>
+							<li><a href="./cart.html">Your Cart</a></li>
+							<li><a href="./register.html">Login</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+			</section>
+
+		</div>

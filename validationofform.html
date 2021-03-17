@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+	<title>registration form with validation</title>
+	<script type="text/javascript">
+		function validate() {
+	//if (document.forms["myforms"]["fname"].value==""){
+	//	alert("Enter a valid fname");
+	//	return false;
+	//if (document.forms["myforms"]["lname"].value==""){
+	//	alert("Enter a valid lname");
+	//	return false;
+	//if (!document.forms["myforms"]["age"].value.match(/^[0-9]+$/)) {
+	//	 alert ("Enter valid value");
+	// if ((document. forms["myforms"]["gender[0]"].checked==false)&& (document. forms["myforms"]["gender[1]"].checked==false])){
+		// alert("Not a gender");
+	//if ((document.myforms.gender[0].checked==false)&& (document.myforms.gender[1].checked==false)){
+		//	alert("Not a gender");
+	//if (document.getElementById("pword").value!=document.getElementById("cword").value){
+			//alert("Password not matching");
+
+    // if (document.forms["myforms"]["city"].value=="0"){
+		// 	alert("Select a city");
+	// if ((document.myforms.qual[0].checked==false)&&(document.myforms.qual[1].checked==false)&&(document.myforms.qual[2].checked==false)){
+		// 	alert("Select atleast one QUALIFICATION ");
+		
+	// if (document.forms["myforms"]["address"].value==""){
+		//  	alert("Enter valid address");
+	//if (!document.forms["myforms"]["phone"].value.match(/d{10}$/)) {
+		 //alert ("Enter valid phone number");
+	//if (document.forms["myforms"]["uname"].value==""){
+			//alert("Enter a valid username");
+	// if (document.forms["myforms"]["resume"].value==""){
+	// 		alert("Upload a valid file");
+	var y=document.getElementById("email").value;
+	// var y=document.myforms.email.value;
+	var a =y.indexOf("@");
+	var b =y.lastIndexOf(".");
+	if (a<1||b<a+2||b+2>=y.length) {
+		alert("Not a valid mail");
+		}
+	
+}
+	
+	</script>
+</head>
+<body>
+	<form name="myforms" action="#" method="post" enctype="multipart/form-data" onsubmit="validate()">
+		<table>
+			<tr>
+				<td> <label>  FIRSTNAME  </label></td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr>
+				<td> <label>  LASTNAME  </label></td>
+				<td><input type="text" name="lname"></td>
+
+			</tr>
+			
+			<tr>
+				<td> <label>  AGE   </label></td>
+				<td><input type="number" name="age"></td>
+			</tr>
+			
+			<tr>
+				<td> <label>  GENDER   </label></td>
+				<td><input type="radio" name="gender",value='male'>
+				MALE
+				</td>
+				<td><input type="radio" name="gender",value='female'>
+				FEMALE
+				</td>
+			</tr>
+			
+			<tr>
+				<td> <label>  QUALIFICATION  </label></td>
+				<td><input type="checkbox" name="qual",value='mtech'>MTECH</td>
+				<td><input type="checkbox" name="qual",value='btech'>BTECH</td>
+				<td><input type="checkbox" name="qual",value=12>12TH</td>
+
+			<tr>
+				<td> <label>  ADDRESS </label></td>
+				<td><textarea rows="5",cols='20' id='address'></textarea></td>
+
+			</tr>
+			<tr>
+				<td> <label>  USERNAME  </label></td>
+				<td><input type="text" name="uname"></td>
+
+			</tr>
+			<tr>
+				<td> <label>  EMAIL  </label></td>
+				<td><input type="text" name="email" id="email" ></td>
+
+			</tr>
+			<tr>
+				<td> <label>  PHONE  </label></td>
+				<td><input type="number" name="phone"id="phone" ></td>
+
+			</tr>
+			<tr>
+				<td> <label>  PASSWORD  </label></td>
+				<td><input type="password" name="pword" id="pword"></td>
+			
+			</tr>
+			
+			<tr>
+				<td> <label>  CONFIRM PASSWORD  </label></td>
+				<td><input type="password" name="cword" id="cword"></td>
+			</tr>
+
+				<td> <label>  CITY  </label></td>
+				<td><select name='city'>
+					<option value="0" >SELECT</option>
+					<option value="trivandrum" >TRIVANDRUM</option>
+					<option value="kochi" >KOCHI</option>	
+					<option value="kollam" >KOLLAM</option>	
+
+					</select> </td>			
+			
+		
+		<tr>
+				<td> <label>  RESUME  </label></td>
+				<td><input type='file' name="file" id="resume"></td>	
+			<tr>
+
+			<tr>
+				<td><button type="reset">CLEAR</button></td>
+				<td><button type="submit">SUBMIT</button></td>
+			</tr>
+		
+		</table>
+	</form>
+
+</body>
+</html>
